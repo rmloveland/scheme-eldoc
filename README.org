@@ -1,0 +1,13 @@
+* Scheme Eldoc Support
+
+  ... with docs for approximately 2,000 Scheme functions.
+
+  #+BEGIN_SRC scheme
+  (add-hook 'scheme-mode-hook #'scheme-setup-eldoc)
+  (add-hook 'scheme-mode-hook #'turn-on-eldoc-mode)
+  #+END_SRC
+
+  #+BEGIN_SRC scheme
+  (add-hook 'inferior-scheme-mode-hook #'scheme-setup-eldoc)
+  (add-hook 'inferior-scheme-mode-hook #'turn-on-eldoc-mode)
+  #+END_SRC
